@@ -10,7 +10,7 @@ write.clipboard(dataset, row.names = FALSE)
 \item{dataset}{The dataset to write as a table to the clipboard (MAC)}
 }
 \description{
-Standard sebarator is tab and row.names = FALSE
+Standard separator is tab and row.names = FALSE
 }
 \examples{
 write.clipboard (table1)

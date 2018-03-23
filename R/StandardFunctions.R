@@ -1,6 +1,6 @@
 #' Write to clipboard
 #'
-#' Standard sebarator is tab and row.names = FALSE
+#' Standard separator is tab and row.names = FALSE
 #'
 #' @param dataset The dataset to write as a table to the clipboard (MAC)
 #'
