@@ -9,8 +9,6 @@
 #' @examples
 #' write.clipboard (table1)
 
-## Clipboard
-
 write.clipboard <- function(dataset, row.names = FALSE){
   write.table(dataset, con <- pipe("pbcopy", "w"), sep = "\t", row.names = row.names)
   close (con)

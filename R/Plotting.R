@@ -13,7 +13,7 @@
 #' @examples
 #'
 
-plot.prob <- function(x, y, ints = 4, binom.model = NULL, ylim = NULL){
+plot_prob <- function(x, y, ints = 4, binom.model = NULL, ylim = NULL){
 
   if(!(is.numeric(x)|is.integer(x))) {error("x not a number")}
   if(any((y %in% c(0,1)) != TRUE)) {error("y not binomial")}
@@ -30,7 +30,6 @@ plot.prob <- function(x, y, ints = 4, binom.model = NULL, ylim = NULL){
   plot(x = df$int_mid, y = df$int_prob,
        cex = df$int_n^(1/2)/max(df$int_n)^(1/4),
        ylim = ylim)
-
 }
 
 #' Function to plot three variables in 3d plot
@@ -56,7 +55,7 @@ plot.prob <- function(x, y, ints = 4, binom.model = NULL, ylim = NULL){
 #' @examples
 #'
 
-plot.2vars <- function(x1, x1_label, x2, x2_label, y, y_label,
+plot_2vars <- function(x1, x1_label, x2, x2_label, y, y_label,
                        intercept = NULL, x1_coef = NULL, x2_coef = NULL,
                        grid.lines = 20, theta = 30, phi = 30){
   require(plot3D)
