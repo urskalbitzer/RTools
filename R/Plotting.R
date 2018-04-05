@@ -13,7 +13,7 @@
 #' @examples
 #'
 
-plot_prob <- function(x, y, ints = 4, binom.model = NULL, ylim = NULL){
+plot_prob <- function(x, y, ints = 4, binom.model = NULL, ylim = NULL, xlab = "", ylab = ""){
 
   if(!(is.numeric(x)|is.integer(x))) {error("x not a number")}
   if(any((y %in% c(0,1)) != TRUE)) {error("y not binomial")}
@@ -29,6 +29,8 @@ plot_prob <- function(x, y, ints = 4, binom.model = NULL, ylim = NULL){
 
   plot(x = df$int_mid, y = df$int_prob,
        cex = df$int_n^(1/2)/max(df$int_n)^(1/4),
+       xlab = xlab,
+       ylab = ylab,
        ylim = ylim)
 }
 

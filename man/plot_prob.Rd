@@ -4,7 +4,8 @@
 \alias{plot_prob}
 \title{Function to plot probabilities}
 \usage{
-plot_prob(x, y, ints = 4, binom.model = NULL, ylim = NULL)
+plot_prob(x, y, ints = 4, binom.model = NULL, ylim = NULL, xlab = "",
+  ylab = "")
 }
 \arguments{
 \item{x}{x-values}
